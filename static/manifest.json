@@ -1,0 +1,35 @@
+{
+  "short_name": "Codelerts",
+  "name": "Codelerts",
+  "icons": [
+    {
+      "src": "/static/maskable_icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose":"maskable"
+    },
+    {
+      "src": "/static/maskable_icon.png",
+      "type": "image/png",
+      "sizes": "416x416",
+      "purpose":"maskable"
+    },
+    {
+      "src": "/static/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose":"any"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": " #ff0000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": " #ff0000"
+}

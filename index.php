@@ -7,6 +7,7 @@
     <title>User Login</title>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="shortcut icon" href="/static/img/logo.png">
+    <link rel="manifest" href="/static/manifest.json">
     <style>
         body, html {
             height:100%
@@ -68,6 +69,15 @@
     setTimeout(()=>{
         document.getElementById("msg").style.display="none"
     }, 5000)
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/static/serviceWorker.js').then((reg) => {
+            console.log('Worker Registered')
+          }).catch((err) => {
+            console.log('Error in service worker registration.')
+          })
+        })
+      }
 </script>
     
     <script src="/static/js/bootstrap.bundle.js"></script>
